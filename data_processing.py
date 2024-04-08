@@ -53,7 +53,10 @@ def prepare_data(text, tokenizer,vocab_size, inputlength_m=32): # input_length_m
     targets = tf.one_hot(targets, vocab_size)
     # create TensorFlow dataset from the input-target pairs
     dataset = tf.data.Dataset.from_tensor_slices((inputs, targets))
+    train_dataset, val_dataset = tf.keras.utils.split_dataset(dataset, left_size=0.7, right_size=0.3, shuffle=True)
     # shuffle, batch and prefetch
-    dataset = dataset.shuffle(1000).batch(32).prefetch(4)
+    train_dataset = train_dataset.shuffle(1000).batch(32).prefetch(4)
+    val_dataset = val_dataset.shuffle(1000).batch(32).prefetch(4)
 
-    return dataset
+
+    return train_dataset, val_dataset
