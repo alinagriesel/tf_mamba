@@ -54,7 +54,7 @@ def run_training():
     train_dataset = data_preprocessing(train_data, train_labels, tokenizer, 267)
     validation_dataset = data_preprocessing(val_data, val_labels, tokenizer, 267)
 
-    model = MambaModel(3, vocab_size, input_dim=267)
+    model = MambaModel(1, vocab_size, input_dim=267)
     optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
     loss = tf.keras.losses.BinaryCrossentropy()
 
