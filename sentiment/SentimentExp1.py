@@ -61,7 +61,7 @@ def run_training():
     # compile the model (here, adding a loss function and an optimizer)
     model.compile(optimizer = optimizer, loss=loss, metrics=["accuracy"])
 
-    history = model.fit(train_dataset,validation_data=validation_dataset, epochs=8)
+    history = model.fit(train_dataset,validation_data=validation_dataset, epochs=10)
 
     visualise_results(history)
 
