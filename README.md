@@ -17,7 +17,7 @@ In their paper “Mamba: Linear-Time Sequence Modeling with Selective State Spac
 This model scales linearly in computational complexity with sequence length while allegedly performing as good as other prominent sequence-to-sequence models.
 It thereby specifically promotes large context windows that could contribute to enhancing LLMs as well as other areas using deep learning such as genomics.
 
-This project report is structured as follows: 
+The project report is structured as follows: 
 At first an extensive overview of relevant concepts, papers and mechanisms is given. Afterwards, the implementation of a simplified Mamba model is explained, followed by the experiments conducted with the implementation. Last but not least, the Mamba model and implementation are discussed with regard to future prospects. 
 
 
