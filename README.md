@@ -1,7 +1,7 @@
 # tf_mamba
 This is a project within the scope of the course "Implementing ANN's with Tensorflow" at the University of Osnabrueck.
 
-# Motivating Implementation of Mamba Architecture
+# Motivating Mamba Model
 ## Report Introduction
 Natural Language Processing and Large Language Models (LLMs) can nowadays be encountered everywhere in the form of chatbots and virtual assistants, text summarization and translation of languages.
 The majority of these models is based on the Transformer architecture and its attention mechanism.
